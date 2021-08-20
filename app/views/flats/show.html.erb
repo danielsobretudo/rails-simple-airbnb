@@ -1,1 +1,16 @@
 <%= render 'navbar' %>
+
+<p>imagem aqui</p>
+<h4 class="card-title"><%= @flat.name %></h5>
+<p class="card-text"><%= @flat.address %></p>
+<h5>A bit more about this flat...</h5>
+<p><%= @flat.description %></p>
+<h5>Details</h5>
+<i class="fas fa-users"></i><%= @flat.number_of_guests %>
+<i class="fas fa-euro-sign"></i><%= @flat.price_per_night %>
+
+
+<p><strong>Book this place!</strong></p>
+<p>Book</p>
+
+<%= link_to "Go to Flat List", flats_path %>
