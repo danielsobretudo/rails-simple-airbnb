@@ -17,8 +17,8 @@
           <hr>
           <div class="card-body">
             <%= link_to "More Info", flat_path(flat.id) %>
-            <%= link_to "Edit", edit_flat_path(:id) %>
-            <%= link_to "Remove", flat_path(:id),
+            <%= link_to "Edit", edit_flat_path(flat.id) %>
+            <%= link_to "Remove", flat_path(flat.id),
                         method: :delete,
                         data: { confirm: "Are you sure?" } %>
           </div>
